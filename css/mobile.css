@@ -1,0 +1,61 @@
+@media (max-width:800px) {
+.navbar>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;}
+
+.navbar>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;}
+
+.navbar>.nav-btn>label:hover,
+.navbar #nav-check:checked~.nav-btn>label {
+    background-color: white;}
+
+.navbar>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid black;}
+
+.navlink {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #ebebeb;
+    height: 0px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;}
+
+.navlink>li>a {
+    display: block;
+    width: 100%;}
+
+.navbar>#nav-check:not(:checked)~.navlink {
+    height: 0px;}
+
+.navbar>#nav-check:checked~.navlink {
+    height: calc(100vh - 50px);
+    overflow-y: auto;}
+
+.checkbox {
+    display: none;}
+
+.hero-subtitle {
+    font-size: 30px;}
+
+.image img{
+    width: 350px;
+    height: 350px;
+    border: 5px solid rgb(34, 34, 34);
+    border-radius: 175px;}
+
+.the-title{
+    font-size: 30px;}
+}
